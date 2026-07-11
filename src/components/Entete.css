@@ -1,0 +1,30 @@
+.entete{
+    background-color: hsl(226, 25%, 17%);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.logoentete{
+    width: 150px;
+}
+
+.theme{
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    background-color:hsl(226, 11%, 37%) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.soleil{
+    width: 20px;
+    height: 20px;
+}
