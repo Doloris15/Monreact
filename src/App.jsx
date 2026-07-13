@@ -25,13 +25,19 @@ function App() {
       );
   };
 
+  const toggle = (position) => {
+    const copie = [...extensions];
+    copie[position].isActive = !copie[position].isActive;
+    setExtensions(copie);
+  };
+
   return (
     <div className="App">
       <Entete />
       <SousEntete />
       <Grille>
         {extensions.map((ext) => (
-        <Carte key={ext.id} extension={ext} onRemove={remove} />
+        <Carte key={ext.id} extension={ext} onRemove={remove} onToggle={toggle} />
         ))}
       </Grille>
     </div>
