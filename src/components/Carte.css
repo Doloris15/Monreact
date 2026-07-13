@@ -1,0 +1,84 @@
+.Carte {
+  box-sizing: border-box;
+  background-color: hsl(226, 25%, 20%);
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Carte-haut {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.carte-icone {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+}
+
+.carte-nom {
+  color: #fff;
+  font-size: 16px;
+  margin: 0 0 6px 0;
+}
+
+.carte-description {
+  color: hsl(0, 0%, 78%);
+  font-size: 13px;
+  margin: 0;
+}
+
+.Carte-bas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-remove {
+  background-color: transparent;
+  border: 1px solid hsl(226, 11%, 37%);
+  color: #fff;
+  border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.btn-remove:hover{
+    background-color: hsl(3, 71%, 56%);
+}
+
+
+.toggle {
+  width: 44px;
+  height: 24px;
+  border-radius: 20px;
+  border: none;
+  background-color: hsl(226, 11%, 37%);
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+}
+
+.toggle-round {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.toggle.actif {
+  background-color: hsl(3, 86%, 64%);
+}
+
+.toggle.actif .toggle-round {
+  transform: translateX(20px);
+}

@@ -1,0 +1,21 @@
+.Grille {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+@media (max-widht: 900px) {
+    .Grille {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-widht :600px) {
+    .Grille {
+        grid-template-columns: 1fr;
+    }
+}
