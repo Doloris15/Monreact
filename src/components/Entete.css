@@ -28,3 +28,12 @@
     width: 20px;
     height: 20px;
 }
+
+
+body[data-theme="light"] .entete {
+    background-color: hsl(200, 60%, 99%);
+}
+
+body[data-theme="light"] .theme {
+    background-color: hsl(0, 0%, 78%);
+}

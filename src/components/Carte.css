@@ -24,12 +24,14 @@
   color: #fff;
   font-size: 16px;
   margin: 0 0 6px 0;
+  text-align: left;
 }
 
 .carte-description {
   color: hsl(0, 0%, 78%);
-  font-size: 13px;
+  font-size: 15px;
   margin: 0;
+  text-align: left;
 }
 
 .Carte-bas {
@@ -73,6 +75,7 @@
   background-color: #fff;
   border-radius: 50%;
   transition: transform 0.2s ease;
+  border: 1px solid hsl(200, 60%, 99%);
 }
 
 .toggle.actif {
@@ -82,3 +85,41 @@
 .toggle.actif .toggle-round {
   transform: translateX(20px);
 }
+
+
+body[data-theme="light"] .Carte {
+    background-color: hsl(200, 60%, 99%);
+}
+
+body[data-theme="light"] .btn-remove {
+    background-color: hsl(200, 60%, 99%);
+    color: #091540;
+}
+
+
+body[data-theme="light"] .carte-nom {
+    color: #091540;
+}
+
+
+body[data-theme="light"] .carte-description {
+    color: hsl(225, 23%, 24%);
+}
+
+body[data-theme="light"] .btn-remove:hover{
+    background-color: hsl(3, 77%, 44%);
+}
+
+
+body[data-theme="light"] .toggle {
+    background-color: hsl(0, 0%, 78%);
+}
+
+
+body[data-theme="light"] .toggle.actif {
+    background-color: hsl(3, 71%, 56%);
+}
+
+
+
+ 

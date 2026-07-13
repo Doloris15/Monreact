@@ -1,22 +1,70 @@
-.sousentete{
+.sousentete {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.choisir{
+.choisir {
     display: flex;
     gap: 10px;
 }
 
-.choix{
+.choix {
     padding: 10px 20px;
     border-radius: 20px;
     border: none;
+    background-color: hsl(225, 23%, 24%);
+    color: hsl(200, 60%, 99%);
+    cursor: pointer;
+}
+
+.actif {
+    background-color: hsl(3, 77%, 44%);
+    color: #091540;
+}
+
+
+.choix:not(.actif):hover {
     background-color: hsl(226, 11%, 37%);
 }
 
-.actif{
+.actif:hover {
     background-color: hsl(3, 77%, 44%);
+    color: #091540;
 }
+
+.titre {
+    color: #EEF8F9;
+}
+
+
+
+body[data-theme="light"] .titre {
+    color: #091540;
+}
+
+
+body[data-theme="light"] .choix {
+    background-color: hsl(200, 60%, 99%);
+    color: #091540;
+}
+
+body[data-theme="light"] .actif:hover {
+    background-color: hsl(3, 71%, 56%);
+    color: #091540;
+}
+
+body[data-theme="light"] .choix:not(.actif):hover {
+    background-color: hsl(0, 0%, 78%);
+}
+
+body[data-theme="light"] .actif {
+    background-color: hsl(3, 71%, 56%);
+    color: #091540;
+}
+    
+
+
+
+
 
